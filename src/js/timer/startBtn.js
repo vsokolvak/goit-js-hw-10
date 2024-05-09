@@ -1,21 +1,19 @@
 import { startTimer } from "./startTimer";
 
+let timerTime = 0
 const startBtn = document.querySelector('[data-start]')
-
-const clickBtn = btnEl => {
+startBtn.addEventListener('click', btnEl => {
     disableStartBtn();
-    startTimer(btnEl.currentTarget.dataset.time);
-}
+    startTimer(timerTime);
+});
 
 export const enableStartBtn = (time) => {
     startBtn.classList.add('isActive');
     startBtn.disabled = false;
-    startBtn.dataset.time = time - Date.now();
-    startBtn.addEventListener('click', clickBtn);
+    timerTime = time - Date.now();
 }
 
 export const disableStartBtn = () => {
     startBtn.classList.remove('isActive');
-    startBtn.removeEventListener('click', clickBtn);
     startBtn.disabled = true
 }

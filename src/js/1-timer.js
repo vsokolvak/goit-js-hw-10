@@ -6,7 +6,7 @@ import '../css/timer.css'
 import { disableStartBtn, enableStartBtn } from "./timer/startBtn";
 
 const flatpickrOptions = {
-  minDate: Date.now(),
+  // minDate: Date.now(),
   enableTime: true,
   time_24hr: true,
   defaultDate: Date.now(),
@@ -23,14 +23,17 @@ function onCloseCalendar(selectedDates) {
   if (selectedDates[0] < Date.now()) {
 
     iziToast.show({
-      message: 'Please choose a date in the future',
+      message: '❌ Please choose a date in the future',
+      messageColor: 'white',
+      messageSize: 26,
       class: 'alert',
+      timeout: 1000,
       close: false,
       closeOnEscape: !false,
       closeOnClick: !false,
       position: 'topRight',
-      image:
-        'https://static.vecteezy.com/system/resources/previews/018/887/460/original/signs-close-icon-png.png',
+      // image:
+      //   'https://static.vecteezy.com/system/resources/previews/018/887/460/original/signs-close-icon-png.png',
       timeout: 5000,
     });
 
