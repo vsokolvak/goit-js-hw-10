@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 1 timer</title>
+    <link rel="stylesheet" href="./css/timer.css" />
+</head>
+
+<body>
+    <div class="nav">
+        <h1 class="nav-title">Vadim Sokolvak home work JS-10 task-1 <em>timer</em> </h1>
+        <ul class="menu">
+            <li class="menu-item">
+                <a href="./index.html" class="menu-href"> Home page </a>
+            </li>
+            <li class="menu-item">
+                <a href="./2-snackbar.html" class="menu-href"> Task 2 Snackbar </a>
+            </li>
+        </ul>
+    </div>
+    <div class="timer-wraper">
+
+        <input class="input-date isActive" type="text" id="datetime-picker"
+        placeholder="select date" />
+        <button class="start-btn" type="button" data-start>Start</button>
+
+        <div class="timer">
+            <div class="field">
+                <span class="value" data-days>00</span>
+                <span class="label">Days</span>
+            </div>
+            <div class="field">
+                <span class="value" data-hours>00</span>
+                <span class="label">Hours</span>
+            </div>
+            <div class="field">
+                <span class="value" data-minutes>00</span>
+                <span class="label">Minutes</span>
+            </div>
+            <div class="field">
+                <span class="value" data-seconds>00</span>
+                <span class="label">Seconds</span>
+            </div>
+        </div>
+
+    </div>
+
+    <script type="module" src="./js/1-timer.js"></script>
+</body>
+
+</html>

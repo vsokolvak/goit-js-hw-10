@@ -1,0 +1,18 @@
+
+.alert {
+    color: white;
+    background: rgb(224, 3, 3);
+    border-radius: 4px;
+}
+
+.iziToast-body::before {
+    content: 'X';
+    display: block;
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+    border: 2px solid rgb(111, 2, 2);
+    border-radius: 50%;
+    color: rgb(111, 2, 2);
+
+}
