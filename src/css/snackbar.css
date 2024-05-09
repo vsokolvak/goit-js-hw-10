@@ -1,0 +1,66 @@
+@import url('./reset.css');
+@import url('./components.css');
+
+body{
+    font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+
+    color: #242424;
+    background-color: rgba(255, 255, 255, 0.87);
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+}
+
+.nav {
+    padding: 40px;
+    background: #b0fffb;
+    color: black;
+    padding: 20px;
+}
+
+.nav-title {
+    text-align: center;
+}
+
+.snack-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.delay {
+    display: flex;
+    flex-direction: column;
+    font-size: 26px;
+    gap: 5px;
+    transition: all 0.3s ease;
+}
+
+.delay input {
+    font-size: 26px;
+}
+
+.state {
+    font-size: 26px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+.delay:hover, .state:hover, .btn:hover {
+    transform: scale(1.01);
+}
+
+.btn {
+    font-size: 26px;
+    padding: 10px;
+    width: 100%;
+    transition: all 0.3s ease;
+}
