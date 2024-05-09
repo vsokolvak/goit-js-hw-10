@@ -12,6 +12,6 @@ export const createiziToastMsg = (timeOut, promiseStatus) => {
     closeOnClick: !false,
     position: 'topRight',
     progressBarColor: 'darkgreen',
-    timeout: 1000,
+    timeout: 2000,
   };
 };
